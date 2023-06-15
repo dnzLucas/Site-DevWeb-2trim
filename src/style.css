@@ -33,7 +33,7 @@ header {
 main {
     border: 1px solid rgb(12, 240, 221);
     grid-area: main;
-    height: 1000px;
+    height: 5000px;
 }
 
 aside {
@@ -56,6 +56,12 @@ nav a{
     
 }
 
+main p, main h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 30px;
+    
+}
+
 .logo img{
     width: 250px;
 }
@@ -66,3 +72,33 @@ nav{
     justify-content: space-between ;
     align-items: center;
 }
+
+main img{
+    margin: auto;
+    display: block;
+    width: 30vw     ;
+}
+
+.anuncio img{
+    align-items: center;
+    padding: 30px;
+    width: 15vw;
+    margin: auto;
+    display: block;
+}
+
+.anuncio a{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 15px 20px;
+    border-radius: 25px;
+    width: auto;
+    background-color: #2266AF;
+    text-decoration: none;
+    color: #fff;    
+}
+
+.anuncio a:hover{
+    background-color: #1c70ca;
+
+}
+
