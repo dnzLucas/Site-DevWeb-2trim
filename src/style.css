@@ -19,7 +19,6 @@ nav,
 section,
 aside,
 footer {
-    border: 1px solid black;
     min-height: 150px;
 }
 
@@ -28,7 +27,7 @@ header {
     border: 1px solid rgb(253, 0, 42);
     grid-area: header;
     height: 180px;
-}
+} 
 
 main {
     border: 1px solid rgb(12, 240, 221);
@@ -66,7 +65,9 @@ main hr {
     margin: 20px;
     border: 1.5px solid rgb(214, 216, 218);
   }
-
+.ultimasnoticias hr{
+    border: 0.5px solid black;
+}
 .logo img{
     width: 250px;
 }
@@ -84,7 +85,8 @@ main img{
     width: 30vw     ;
 }
 .anuncio{
-    background-color: #edeef0;
+    background-color: #edeef0;    border: 1px solid black;
+
 }
 .anuncio img{
     align-items: center;
@@ -127,4 +129,16 @@ main img{
 
 #groupicon{
     width: 100px;
+}
+
+
+.noticia{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin-right: 200px;
+    font-size: 1.8em
+}
+
+article img{
+    width: 150px;
 }
