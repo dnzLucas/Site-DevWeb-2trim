@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:wght@300;500;800&family=Red+Hat+Display:wght@300&family=Roboto:wght@300&display=swap');
 
-
+body{
+    margin: 0;
+}
 .container {
     display: grid;
     margin: 0;
     grid-template-columns: 70% 30%;
-    padding: 10px 5%;
     grid-template-areas:
         "header header"
         "main aside"
@@ -15,7 +16,6 @@
 
 header,
 main,
-nav,
 section,
 aside,
 footer {
@@ -23,37 +23,40 @@ footer {
 }
 
 header {
+    background-color: #272729;
     display: flex;
-    border: 1px solid rgb(253, 0, 42);
     grid-area: header;
-    height: 180px;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
 } 
 
 main {
-    border: 1px solid rgb(12, 240, 221);
     grid-area: main;
     height: 5000px;
+    padding: 10px 5%;
+
 }
 
 aside {
     padding: 20px 20px;
-    border: 1px solid rgb(41, 247, 0);
     grid-area: aside;
     height: 900px;
 }
 
 footer {
-    border: 1px solid rgb(58, 1, 11);
     grid-area: footer;
     height: 200px;
+    background-color: #010626;
 }
 
-nav a{
+.nav_links a, .nav_links li, button{
     text-decoration: none;
-    color:#010626;
-    font-size: 1.5em;
+    color:#ffffff;
+    font-size: 1.1em;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    
+    list-style: none;
 }
 
 article a{
@@ -76,14 +79,23 @@ main hr {
     border: 0.5px solid black;
 }
 .logo img{
-    width: 250px;
+    width: 200px;
 }
 
 nav{
-    flex: 1;
-    display: flex;
     justify-content: space-between ;
     align-items: center;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header button{
+background-color: #1c70ca;
+border-radius: 50px;
+
 }
 
 main img{
@@ -92,8 +104,7 @@ main img{
     width: 30vw     ;
 }
 .anuncio{
-    background-color: #ffffff;    border: 1px solid black;
-
+    margin-bottom: 150px;
 }
 .anuncio img{
     align-items: center;
@@ -103,7 +114,7 @@ main img{
     display: block;
 }
 
-.anuncio a{
+.saibamais{
     text-align: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
     padding: 10px 15px;
@@ -123,7 +134,6 @@ main img{
 }
 
 .cards{
-    border: 1px solid red;
     
 }
 
@@ -142,15 +152,42 @@ main img{
 .noticia{
     display: grid;
     grid-template-columns: 200px 1fr;
-    margin-right: 200px;
     font-size: 1.8em
 }
 
+
+
 article img{
-    width: 150px;
+    width: 200px;
 }
 
 .titulo{
     padding: 30px 0;
     margin: 0 3vw;
 }
+
+#phone{
+    width: 30px;
+    padding: 0 20px;
+}
+
+#table_mrolympia {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px black;
+  }
+  
+  #table_mrolympia th, #table_mrolympia td {
+    border: solid 1px black;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #table_mrolympia th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+      
