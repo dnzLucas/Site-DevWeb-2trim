@@ -43,12 +43,14 @@ main {
 }
 
 aside {
+    background-attachment: fixed;
     border-left: 2px solid rgb(212, 212, 212);
     background-color: #fcfcfc;
     padding: 20px 20px;
     grid-area: aside;
     height: 900px;
 }
+
 
 footer {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -110,6 +112,10 @@ main h2 {
 
 }
 
+.noticias h1{
+    border-bottom: 1px solid black;
+}
+
 main hr {
     margin: 20px;
     border: 1.5px solid rgb(214, 216, 218);
@@ -164,19 +170,6 @@ main img {
 
 }
 
-.saibamais {
-    text-align: center;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    padding: 10px 15px;
-    border-radius: 25px;
-    width: auto;
-    background-color: #2266AF;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    margin: 0 8vw;
-
-}
 
 .anuncio a:hover {
     background-color: #1c70ca;
@@ -241,4 +234,53 @@ article img {
 #table_mrolympia th {
     background-color: #f2f2f2;
     font-weight: bold;
+}
+
+/* Responsividade */
+
+/* Tamanho de tela pequeno */
+@media (max-width: 767px) {
+
+
+}
+
+
+/* Tamanho de tela médio */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .noticia {
+        display: grid;
+        grid-template-columns: 150px 3fr;
+        font-size: 1em;
+    }
+
+    .noticia a{
+        height: 100px;
+    }
+
+    h1{
+        font-size: 1.1em;
+    }
+
+    article img {
+        width: 100px;
+    }
+
+    footer div {
+        height: 100px;
+        width: 150px;
+    }
+    
+    footer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
+/* Tamanho de tela grande */
+@media (min-width: 1024px) {
+
+
+
 }
