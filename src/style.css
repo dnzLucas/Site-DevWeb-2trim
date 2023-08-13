@@ -13,8 +13,9 @@
 
 }
 
-
-
+.imgas{
+    width: 100%;
+}
 
 body {
     margin: 0;
@@ -295,6 +296,42 @@ article img {
     font-weight: bold;
 }
 
+.injetaveis, .orais{
+
+    border-collapse: collapse;
+    font-family: var(--fonte-padrao);
+    border-radius: 50px;
+}
+
+td, th{
+    border: 1px solid black;
+
+}
+
+.tr-categorias{
+    background-color: rgb(133, 113, 1);
+    color: #fff;
+}
+
+.td-produtos{
+    background-color: #1c70ca;
+    color: #fff;
+}
+
+.td-concentracao{
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    width: 200px;
+}
+
+.td-preco{
+    text-align: center;
+    width: 70px;
+    background-color: rgb(122, 0, 0);
+    color: #fff;
+} 
+
 /* Responsividade */
 
 /* Tamanho de tela pequeno */
@@ -312,7 +349,7 @@ article img {
 
     p,
     .nav_links a {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     header ul {
@@ -446,6 +483,12 @@ article img {
 
 /* Tamanho de tela grande */
 @media (min-width: 1024px) {}
+
+.imgas{
+
+    width: 100%;
+    height: 200px;
+}
 
 footer a {
     color: #fff;
