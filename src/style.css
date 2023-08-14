@@ -245,6 +245,7 @@ section {
 
 }
 
+
 .mais-lidos, .navegue-por-categorias, .noticias {
     padding: 20px;
     margin: 20px 0 0 0;
@@ -260,6 +261,13 @@ section {
     text-decoration: none;
     font-family: var(--fonte-padrao);
     color: var(--fonte-link-color);
+}
+
+.categorias > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 article img {
