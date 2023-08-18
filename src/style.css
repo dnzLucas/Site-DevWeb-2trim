@@ -47,14 +47,12 @@ main {
     background-color: #faf9f9;
     box-shadow: 0 3px 5px 0 rgba(0, 1, 1, .1);
     grid-area: main;
-    height: 3000px;
     padding: 10px 5%;
 
 
 }
 
 .section-div {
-    font-size: 1.4em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -77,7 +75,7 @@ footer {
     grid-area: footer;
     display: grid;
     height: 500px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: #010626;
 }
 
@@ -340,6 +338,11 @@ td, th{
     color: #fff;
 } 
 
+.sociais img{
+    filter: invert(100%);
+
+    width: 50px;
+}
 /* Responsividade */
 
 /* Tamanho de tela pequeno */
@@ -441,7 +444,7 @@ td, th{
 
     }
 
-    footer div {
+    footer > div > div {
         margin: 0 10px;
     }
 
