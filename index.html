@@ -32,7 +32,7 @@
           ><img id="phone" src="src/imagens/phone-call.png" alt=""
         /></a>
       </header>
-      <main>
+      <main class="excecao" >
         <section class="noticias">
           <h1>ULTIMAS NOTÍCIAS</h1>
 
@@ -93,19 +93,8 @@
         </section>
 
         <div class="section-div">
-          <section class="mais-lidos">
-            <h1>MAIS LIDOS</h1>
-            <a href=""
-              >Natural ou “fake natty”? Entenda treta entre Paulo Muzy e Rodrigo
-              Goes.</a
-            ><a href="">TOGURO SACADO: Disse que vai melhorar em 30 dias.</a
-            ><a href="">MR OLYMPIA NATURAL? Antidoping no bodybuilding.</a
-            ><a href=""
-              >Em tão pouco tempo?! Lucas Diniz ganha 17kg em menos de 1 ano de
-              treino.</a
-            >
-          </section>
 
+          <div></div>
           <section class="navegue-por-categorias">
             <h1>NAVEGUE POR CATEGORIAS</h1>
 
@@ -114,22 +103,25 @@
               <div><h1>Esportes e Atividades Físicas</h1></div>
               <div><h1>Tecnologia e Equipamentos</h1></div>
               <div><h1>Nutrição e Suplementação</h1></div>
+              
+              
             </div>
           </section>
         </div>
-
-        
       </main>
       <aside>
-        <div class="anuncio">
-          <a
-            href="https://www.maxtitanium.com.br/power-protein-bar-12-un/p"
-            target="_blank"
-            ><img
-              src="src/imagens/2f26ec39-1aef-4d93-aa2d-af1e34643be9___776d39412e1a6c4c8ac3a547a1aad49b.webp"
-              alt=""
-          /></a>
-        </div>
+        <section class="mais-lidos">
+          <h1>MAIS LIDOS</h1>
+          <a href=""
+            >Natural ou “fake natty”? Entenda treta entre Paulo Muzy e Rodrigo
+            Goes.</a
+          ><a href="">TOGURO SACADO: Disse que vai melhorar em 30 dias.</a
+          ><a href="">MR OLYMPIA NATURAL? Antidoping no bodybuilding.</a
+          ><a href=""
+            >Em tão pouco tempo?! Lucas Diniz ganha 17kg em menos de 1 ano de
+            treino.</a
+          >
+        </section>
 
         <div class="anuncio">
           <a
@@ -142,28 +134,48 @@
         </div>
       </aside>
       <footer>
-        <div>
-          <div><a href="index.html">Início</a></div>
-          <div></div>
-          <div></div>
-        </div>
+
         <div class="sociais">
-          <img src="src/imagens/facebook.png" alt="facebook"><img src="/src/imagens/instagram.png" alt=""><img src="/src/imagens/twitter.png" alt=""><img src="/src/imagens/github.png" alt="">
+          <div class="sociais-img">
+            <img src="src/imagens/facebook.png" alt="facebook" /><img
+              src="src/imagens/instagram.png"
+              alt=""
+            /><img src="src/imagens/twitter.png" alt="" /><img
+              src="src/imagens/github.png"
+              alt=""
+            />
+          </div>
+
+          <div class="footer-links" >
+            <a href="#">Sobre</a><a href="#">Ajuda</a><a href="#">Content guide</a><a href="produtos.html">Produtos</a><a href="#">Privacidade</a><a href="#">Termos de uso</a>
+
+
+          </div>
+
+          <div class="patrocinadores">
+            <p>Nossos patrocinadores</p>
+            <img src="src/imagens/GSuplements_logo.svg" alt="">
+            <img src="src/imagens/BvrGsvM6_400x400-removebg-preview.png" alt="">
+            <img src="src/imagens/Logo_IFC_vertical-removebg-preview(1).png" alt="">
+          </div>
+
+        </div>
+        <div class="copyright">
+          <a href="#">© 2023 GYMnews</a>
         </div>
       </footer>
       <script>
         function verificarIdade() {
           var confirmacao = confirm("Você tem mais de 18 anos?");
-          
+
           if (confirmacao) {
             window.location.href = "produtos.html"; // Redireciona para a página destinada
           } else {
-            alert("Esta pagina é somente para maiores de 18 anos")
+            alert("Esta pagina é somente para maiores de 18 anos");
             // Permanece na mesma página
           }
         }
       </script>
-
     </div>
   </body>
 </html>

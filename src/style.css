@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:wght@300;500;800&family=Red+Hat+Display:wght@300&family=Roboto:wght@300&display=swap');
 
+
+
 :root {
 
     /*CORES*/
@@ -11,6 +13,11 @@
     /*FONTES*/
     --fonte-padrao: 'Plus Jakarta Sans', sans-serif;
 
+}
+
+main:not(.excecao){
+    padding: 0 15%;
+    text-align: justify;
 }
 
 .imgas{
@@ -71,10 +78,9 @@ footer {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 0.9em;
     color: #fff;
-    padding: 50px;
+    padding: 50px 0 0 0;
     grid-area: footer;
     display: grid;
-    height: 500px;
     grid-template-columns: 1fr;
     background-color: #010626;
 }
@@ -130,7 +136,8 @@ main h2 {
 
 .noticias h1,
 .mais-lidos h1,
-section > h1 {
+.navegue-por-categorias h1,
+.noticias h1 {
     border-bottom: 1px solid black;
 }
 
@@ -236,6 +243,11 @@ main img {
     font-size: 1.4em;
 }
 
+.noticia img{
+    width: 100%;
+    height: 100%;
+}
+
 section {
     background-color: #fff;
     border-radius: 10px;
@@ -273,8 +285,8 @@ article img {
 }
 
 .titulo {
-    padding: 30px 0;
-    margin: 0 3vw;
+
+    margin: 0 1vw;
 }
 
 #phone {
@@ -339,10 +351,44 @@ td, th{
 } 
 
 .sociais img{
-    filter: invert(100%);
 
-    width: 50px;
+    width: 30px;
+    margin: 0 5px;
 }
+
+
+
+.sociais{
+    text-align: center;
+
+}
+
+.footer-links a{
+    margin: 0 15px;
+
+}
+
+.footer-links{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(71, 71, 71);
+}
+
+.patrocinadores{
+    margin: 0 0 10px 0;
+}
+
+
+.copyright{
+    background-color: #272729;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+footer img{
+    cursor: pointer;
+}
+
 /* Responsividade */
 
 /* Tamanho de tela pequeno */
@@ -388,15 +434,7 @@ td, th{
         padding: 3%;
     }
 
-    .noticia {
-        display: grid;
-        grid-template-columns: 120px 3fr;
-        font-size: 1.1em;
-    }
 
-    .noticia a {
-        height: 80px;
-    }
 
     h1 {
         font-size: 1em;
@@ -439,24 +477,36 @@ td, th{
 
 
     footer {
-        grid-template-columns: 1fr 1fr;
         font-size: 0.8em;
 
     }
 
-    footer > div > div {
-        margin: 0 10px;
+    .footer-links > .logo, .footer-links > .invisible{
+        display: none;
+    }
+    
+    .footer-links{
+        text-align: center;
+    }
+
+    .sociais img{
+    width: 30px;
     }
 
 
-
-
+    .sociais{
+        text-align: center;
+        
+    }
 
     section h1 {
         text-align: center;
         font-size: 1em;
     }
 
+    .footer-links  .logo{
+        width: 1000px;
+    }
 }
 
 /* Tamanho de tela médio */
@@ -480,14 +530,6 @@ td, th{
         width: 100px;
     }
 
-    footer div {
-        height: 100px;
-        width: 150px;
-    }
-
-    footer {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 
 }
 
