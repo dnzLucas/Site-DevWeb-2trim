@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:wght@300;500;800&family=Red+Hat+Display:wght@300&family=Roboto:wght@300&display=swap');
 
-
+*{
+    font-family: var(--fonte-padrao);
+}
 
 :root {
 
@@ -75,7 +77,6 @@ aside {
 
 
 footer {
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 0.9em;
     color: #fff;
     padding: 50px 0 0 0;
@@ -114,7 +115,6 @@ button {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.1em;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     list-style: none;
 }
 
@@ -122,14 +122,12 @@ article a {
     box-shadow: 0 3px 5px 0 rgba(0, 1, 1, .1);
     color: #010626;
     text-decoration: none;
-    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 main p,
 main h1,
 main h2,
 aside h1 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
 
 
 
@@ -300,7 +298,6 @@ article img {
 }
 
 #table_mrolympia {
-    font-family: 'Plus Jakarta Sans', sans-serif;
     width: 100%;
     border-collapse: collapse;
     border: solid 1px black;
@@ -355,11 +352,7 @@ td, th{
     color: #fff;
 } 
 
-.sociais img{
 
-    width: 40px;
-    margin: 0 5px;
-}
 
 
 
@@ -394,7 +387,61 @@ footer img{
     cursor: pointer;
 }
 
+.divesquisita{
+    display: flex;
+    justify-content: space-between;
+}
 
+.img-keyframe{
+    width: 100%;
+    margin: 40px;
+}
+
+@keyframes body {
+    0%{
+        transform: rotateX(0deg) scale(1);
+    }
+    100%{
+        transform: rotate(360deg) scale(0.5);
+    }
+}
+
+    
+    .sociais-img img, .patrocinadores img{
+    width: 45px;
+    margin: 5px;
+    }
+
+    .invisivel{
+        width: 128px;
+    }
+
+    .flipper{
+        
+    }
+
+    .front, .back {
+        position: absolute;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transition: all 1s ease;
+    }
+    
+    .front {
+        transform: rotateY(0deg);
+    }
+    
+    .back {
+        transform: rotateY(180deg);
+    }
+    
+    .flipper:hover .front {
+        transform: rotateY(-180deg);
+    }
+    
+    .flipper:hover .back {
+        transform: rotateY(0deg);
+    }
 
 /* Responsividade */
 
@@ -493,6 +540,11 @@ footer img{
     .noticia img{
         width: 100%;
     }
+    .injetaveis, .orais{
+        font-size: 0.6em;
+
+    }
+
 
     /*Footer*/
 
@@ -511,7 +563,7 @@ footer img{
         text-align: center;
     }
 
-    .sociais img{
+    .sociais-img img, .patrocinadores img{
     width: 30px;
     }
 

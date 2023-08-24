@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    height: 400px;
+    width: 220px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.container:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.container:hover .back {
+    transform: rotateY(0deg);
+}
+
+body {
+    background-color: gray;
+}
+    </style>
+</head> 
+<body>
+        <div class="container">
+        <div class="front"> <img src="src/imagens/turmatoda.jpg" alt=""> 
+        </div>
+        <div class="back"> <img src="src/imagens/github.png" alt=""> 
+        </div>
+        </div>
+
+
+</body>
+</html>
