@@ -545,7 +545,7 @@ footer img{
     }
 
     h1 {
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 
     article img {
@@ -555,7 +555,7 @@ footer img{
  
     .noticia{
         height: 90px;
-    }
+    }   
     
 }
 
@@ -568,6 +568,14 @@ footer img{
     .noticia img{
         width: 100%;
         height: 100%;
+    }
+
+    .mais-lidos h1{
+            font-size: 0.8em;
+    }
+
+    .mais-lidos a{
+        font-size: 0.7em;
     }
 
 
