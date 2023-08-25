@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:wght@300;500;800&family=Red+Hat+Display:wght@300&family=Roboto:wght@300&display=swap');
 
-*{
+* {
     font-family: var(--fonte-padrao);
 }
 
@@ -9,7 +9,7 @@
     /*CORES*/
     --header-bg-color: #272729;
     --footer-bg-color: #010626;
-    --main-bg-color: white;
+    --main-bg-color: #fff;
     --fonte-link-color: #1c70ca;
 
     /*FONTES*/
@@ -17,12 +17,13 @@
 
 }
 
-main:not(.excecao){
+main:not(.excecao) {
     padding: 0 15%;
     text-align: justify;
 }
 
-.imgas{
+
+.imgas {
     width: 100%;
 }
 
@@ -72,7 +73,6 @@ aside {
     background-color: #fcfcfc;
     padding: 20px 20px;
     grid-area: aside;
-    height: 900px;
 }
 
 
@@ -87,7 +87,7 @@ footer {
 }
 
 footer a:hover {
-    color: #1c70ca;
+    color: var(--fonte-link-color);
 }
 
 
@@ -127,11 +127,7 @@ article a {
 main p,
 main h1,
 main h2,
-aside h1 {
-
-
-
-}
+aside h1 {}
 
 .noticias h1,
 .mais-lidos h1,
@@ -169,9 +165,7 @@ main hr {
     border: 0.5px solid black;
 }
 
-.ultimasnoticias-aside{
-
-}
+.ultimasnoticias-aside {}
 
 .logo img {
     width: 200px;
@@ -188,7 +182,7 @@ nav {
 }
 
 header button {
-    background-color: #1c70ca;
+    background-color: var(--fonte-link-color);
     border-radius: 50px;
 
 }
@@ -218,7 +212,7 @@ main img {
 
 
 .anuncio a:hover {
-    background-color: #1c70ca;
+    background-color: var(--fonte-link-color);
 
 }
 
@@ -246,7 +240,7 @@ main img {
     font-size: 1.4em;
 }
 
-.noticia img{
+.noticia img {
     width: 100%;
     height: 100%;
 }
@@ -259,7 +253,10 @@ section {
 }
 
 
-.mais-lidos, .navegue-por-categorias, .noticias {
+.mais-lidos,
+.navegue-por-categorias,
+.noticias,
+.email-box {
     padding: 20px;
     margin: 20px 0 0 0;
 }
@@ -276,7 +273,7 @@ section {
     color: var(--fonte-link-color);
 }
 
-.categorias > div {
+.categorias>div {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -316,132 +313,128 @@ article img {
     font-weight: bold;
 }
 
-.injetaveis, .orais{
+.injetaveis,
+.orais {
 
     border-collapse: collapse;
     font-family: var(--fonte-padrao);
     border-radius: 50px;
 }
 
-td, th{
+td,
+th {
     border: 1px solid black;
 
 }
 
-.tr-categorias{
+.tr-categorias {
     background-color: rgb(133, 113, 1);
     color: #fff;
 }
 
-.td-produtos{
-    background-color: #1c70ca;
+.td-produtos {
+    background-color: var(--fonte-link-color);
     color: #fff;
 }
 
-.td-concentracao{
+.td-concentracao {
     text-align: center;
     background-color: green;
     color: #fff;
     width: 200px;
 }
 
-.td-preco{
+.td-preco {
     text-align: center;
     width: 70px;
     background-color: rgb(122, 0, 0);
     color: #fff;
-} 
+}
 
 
 
 
 
-.sociais{
+.sociais {
     text-align: center;
 
 }
 
-.footer-links a{
+.footer-links a {
     margin: 0 15px;
 
 }
 
-.footer-links{
+.footer-links {
     text-align: center;
     padding: 20px;
     border-bottom: 1px solid rgb(71, 71, 71);
 }
 
-.patrocinadores{
+.patrocinadores {
     margin: 0 0 10px 0;
 }
 
 
-.copyright{
+.copyright {
     background-color: #272729;
     font-size: 0.7em;
     text-align: center;
 }
 
-footer img{
+footer img {
     cursor: pointer;
 }
 
-.divesquisita{
+.divesquisita {
     display: flex;
     justify-content: space-between;
 }
 
-.img-keyframe{
-    width: 100%;
-    margin: 40px;
+.img-keyframe {
+    width: 120px;
+    animation: spin-img 6s infinite alternate;
 }
 
-@keyframes body {
-    0%{
-        transform: rotateX(0deg) scale(1);
+@keyframes spin-img {
+    0% {
+        transform: rotate(0deg);
     }
-    100%{
-        transform: rotate(360deg) scale(0.5);
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
-    
-    .sociais-img img, .patrocinadores img{
+#email:placeholder-shown+#submit:not(:focus) {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.sociais-img img,
+.patrocinadores img {
     width: 45px;
     margin: 5px;
-    }
+}
 
-    .invisivel{
-        width: 128px;
-    }
+.invisivel {
+    width: 128px;
+}
 
-    .flipper{
-        
-    }
+.email-box button {
+    background-color: var(--fonte-link-color);
+    border: none;
+}
 
-    .front, .back {
-        position: absolute;
-        backface-visibility: hidden;
-        transform-style: preserve-3d;
-        transition: all 1s ease;
-    }
-    
-    .front {
-        transform: rotateY(0deg);
-    }
-    
-    .back {
-        transform: rotateY(180deg);
-    }
-    
-    .flipper:hover .front {
-        transform: rotateY(-180deg);
-    }
-    
-    .flipper:hover .back {
-        transform: rotateY(0deg);
-    }
+.email-box{
+    height: 100px;
+    text-align: center;
+}
+
+input {
+    width: 200px;
+
+}
 
 /* Responsividade */
 
@@ -506,7 +499,7 @@ footer img{
     .noticias a {
         height: 80px;
     }
-    
+
 
     .section-div {
         grid-template-columns: 1fr;
@@ -537,10 +530,12 @@ footer img{
 
     }
 
-    .noticia img{
+    .noticia img {
         width: 100%;
     }
-    .injetaveis, .orais{
+
+    .injetaveis,
+    .orais {
         font-size: 0.6em;
 
     }
@@ -555,22 +550,24 @@ footer img{
 
     }
 
-    .footer-links > .logo, .footer-links > .invisible{
+    .footer-links>.logo,
+    .footer-links>.invisible {
         display: none;
     }
-    
-    .footer-links{
+
+    .footer-links {
         text-align: center;
     }
 
-    .sociais-img img, .patrocinadores img{
-    width: 30px;
+    .sociais-img img,
+    .patrocinadores img {
+        width: 30px;
     }
 
 
-    .sociais{
+    .sociais {
         text-align: center;
-        
+
     }
 
     section h1 {
@@ -578,9 +575,18 @@ footer img{
         font-size: 1em;
     }
 
-    .footer-links  .logo{
+    .footer-links .logo {
         width: 1000px;
     }
+
+    .img-keyframe {
+        width: 50px;
+    }
+
+    .invisivel {
+        width: 50px;
+    }
+
 }
 
 /* Tamanho de tela médio */
@@ -604,11 +610,11 @@ footer img{
         width: 100px;
     }
 
- 
-    .noticia{
+
+    .noticia {
         height: 90px;
-    }   
-    
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1140px) {
@@ -617,16 +623,16 @@ footer img{
         font-size: 0.7em;
     }
 
-    .noticia img{
+    .noticia img {
         width: 100%;
         height: 100%;
     }
 
-    .mais-lidos h1{
-            font-size: 0.8em;
+    .mais-lidos h1 {
+        font-size: 0.8em;
     }
 
-    .mais-lidos a{
+    .mais-lidos a {
         font-size: 0.7em;
     }
 
@@ -637,7 +643,7 @@ footer img{
 /* Tamanho de tela grande */
 @media (min-width: 1024px) {}
 
-.imgas{
+.imgas {
 
     width: 100%;
     height: 200px;
